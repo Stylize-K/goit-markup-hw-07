@@ -483,11 +483,45 @@ img {
     height: 432px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero@mob_1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),(min-resolution: 2dppx) {
+    .hero-overlay {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero@mob_2x.jpg);
+    }
+}
+
+
+@media screen and (min-width: 481px) {
+    .hero-overlay {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero@tab_1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            .hero-overlay {
+                background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero@tab_2x.jpg);
+            }
+        }
+}
+
+@media screen and (min-width: 769px) {
+    .hero-overlay {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero@desk_1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-overlay {
+            background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero@desk_2x.jpg);
+        }
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .hero-overlay {
